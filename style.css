@@ -1,0 +1,16 @@
+body,html{
+    cursor: none;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    pointer-events: none;
+}
+input{
+    cursor: none !important;
+}
+button{
+    cursor: none !important;
+}
