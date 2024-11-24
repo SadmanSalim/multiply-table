@@ -29,15 +29,18 @@ window.addEventListener('mousemove', function(event){
 
 // *faqs
 let faqs = document.querySelectorAll('.faq');
+let faqsButton = document.querySelectorAll('.faq button');
 let faqBodys = document.querySelectorAll('.faq_body');
 
 for (let faq of faqs) {
     faq.addEventListener('click', function() {
         for (let faqBody of faqBodys) {
             faqBody.classList.remove('active');
+            faqsButton.innerHTML = '';
         }
         let index = Array.from(faqs).indexOf(faq);
         faqBodys[index].classList.add('active');
+        faqsButton[index].innerHTML = '<iconify-icon icon="oui:arrow-up"></iconify-icon>';
     });
 }
 
